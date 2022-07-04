@@ -1,0 +1,123 @@
+ /* Caracteristica de herencia
+ Se denomina herencia 
+ porque la propiedad especificada para un contenedor
+ se aplica a todo el contenido del contenedor
+ en este caso, al contenido de body
+ se está aplicando el tipo de fuente Arial */
+ body{
+ 	font-family: Arial;
+ 	color: tomato;
+ }
+
+ input{
+	font-family: inherit;
+}
+
+
+/* La herencia se anula cuando cuando la propiedad
+se especifica para un elemento en particular
+ejemplo 
+la propiedad Arial de body
+se está anulando con la especificación de
+h2 y la propiedad cursive */
+ h2{
+ 	font-family: cursive;
+ }
+
+ /* Existen elementos que no heredan propiedades 
+ del contenedor por defecto, como los enlaces
+ para estos casos se utiliza inherit que termina 
+ forzando la propiedad de color asignada a body
+ Ejemplo */
+
+ a{
+ 	color: inherit;
+ }
+
+ /* lo que se denomina cascada */
+
+ .title{
+	color: blue;
+ }
+
+/*
+ .title{
+	color: crimson;
+ }
+
+ .title{
+ 	color: blue;
+ 	color: red;
+ 	color: yellow;
+ 	color: steelblue;
+ }
+
+ Clases de selector
+ especificidad de 1.-selector de tipo, Pseudoelemento ::
+ especificidad de 10.-Selectores de clase, Pseudoclase :, Selectores de atributo{}
+ especificidad de 100.-selector ID
+ */
+
+/*Escuche y se me ocurre que todos los elementos
+ de la web, son capas y no cajas
+ que se van ubicando una a continuación de la otra
+ salvo se le indique lo contrario
+ En el ejemplo inferior, si la capa creada 
+ no tiene contenido, la capa no se visualizará
+ salvo se indique una de sus dimensiones
+ prueben quitar el contenido y las dimensiones
+ a la capa y comprueben */
+
+
+ .caja1{
+ 	background-color: steelblue;
+ 	font-family: cursive;
+ 	color: white;
+ 	font-size: 20px;
+ 	width: 15%;
+ 	height: 200px;
+ 	
+ 	/* Padding y border se denominan Shorthand, porque
+ 	basta con poner una linea para especificar cada uno
+ 	de ellos
+ 	en el caso de border-style, 
+ 	tambien lo es y sus bariedades son: ;
+ 	dotted, dashed, solid, double, 
+ 	groove, ridge
+ 	en el caso de border-width: 20px; se puede utilizar
+ 	palabras como thin, medium, thick*/
+ 	padding: 30px;
+ 	border-color: purple;
+ 	border-style: solid;
+ 	border-width: 20px;
+
+ }
+
+ .caja1{
+ 	margin: 10px;
+ }
+
+ .caja{
+ 	background-color: steelblue;
+ 	font-family: cursive;
+ 	color: white;
+ 	font-size: 20px;
+ 	width: 15%;
+ 	height: 200px;
+ 	
+ 	/* Padding y border se denominan Shorthand, porque
+ 	basta con poner una linea para especificar cada uno
+ 	de ellos
+ 	en el caso de border-style, 
+ 	tambien lo es y sus bariedades son: ;
+ 	dotted, dashed, solid, double, 
+ 	groove, ridge
+ 	en el caso de border-width: 20px; se puede utilizar
+ 	palabras como thin, medium, thick*/
+ 	padding: 30px;
+ 	border-color: purple;
+ 	border-style: solid;
+ 	border-width: 20px;
+ 	margin: 10px;
+
+ }

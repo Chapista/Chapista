@@ -1,0 +1,66 @@
+/* Selector universal
+
+*{
+	color: green;
+	font-size: 40px;
+	background: brown;
+}*/
+
+h1{
+	color: crimson;
+	font-size: 60px;
+	text-align: center;
+}
+
+/* Selector de tipo o etiqueta
+p{
+	color: blue;
+	font-size: 30px;
+
+h2{
+	color: brown;
+	font-size: 30px;
+	border: 1px solid black;
+}*/
+
+
+/* Selector de clase
+.titulo{
+	color: silver;
+	font-size: 30px;
+	border: 1px solid green;
+
+.parrafo{
+	color: silver;
+	font-size: 30px;
+	border: 1px solid green;
+}
+
+	.negrita{
+	font-weight: bold;
+	border: 1px solid green;
+}*/
+
+
+/* Selector ID*/
+
+#titulo{
+	color: steelblue;
+	font-size: 50px;
+	border: 2px solid green;
+}
+
+.tabuelo .ttitulo{
+	color: red;
+	font-size: 45px;
+}
+
+.abuelito .hijo{
+	color: red;
+	font-size: 45px;
+}
+
+.abuelito .nieto{
+	color: blue;
+	font-size: 45px;
+}
